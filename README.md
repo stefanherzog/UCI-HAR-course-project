@@ -10,26 +10,26 @@ UCI HAR course project for John Hopkins University's
 1. Set the correct working directory at the top of the file.
 2. In R: `source("run_analysis.r")`
 
-*Note*: As the instructions say that "The code should have a file 
+*Note*: As the instructions say that *"The code should have a file 
 run_analysis.R in the main directory that can be run as long as the 
-Samsung data is in your working directory",  I commented out lines 36-38,
+Samsung data is in your working directory"*, I commented out lines 36-38,
 which download and unzip the data from the internet.
 
 
-## More information on original data set
+## More information on the original data set
 
 For more details on the original data set, see the
-[Human Activity Recognition Using Smartphones Data Set][HAR-UCI] website.
+["Human Activity Recognition Using Smartphones Data Set" website][HAR-UCI].
 
 
 ## Further remarks
 
-I tried to use the [`dplyr`][dplyr] and [`tidyr`][tidyr] packages as much as possible
-when writing the code---including the use of the `%>%` forward-pipe operator
-(as implemented in the [`magrittr`][magrittr] package).
+I tried to use the [`dplyr`][dplyr] and [`tidyr`][tidyr] packages as much as 
+possible when writing the code---including the use of the `%>%` forward-pipe 
+operator (as implemented in the [`magrittr`][magrittr] package).
 
 The comments in "run_analysis.r" are formatted as roxygen2 style comments, so 
-that the code can be turned into an [R notebook][R_notebook].
+that the code can be turned into an [R notebook][R_notebook] (e.g., in RStudio).
 
 
 [HAR-UCI]: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones

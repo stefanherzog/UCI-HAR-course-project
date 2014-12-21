@@ -22,5 +22,5 @@ For more details on the original data set, see the
 *average*       arithmetic mean of all observation values for a
                 particular combination of subject, activity
                 and pattern-variable combination
-                
------------------------------------------------------------------
+------------------------------------------------------------------
+
