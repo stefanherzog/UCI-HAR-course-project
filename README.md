@@ -20,19 +20,19 @@ which download and unzip the data from the internet.
 
 From a high-level perspective, the script does the following:
 
- 1. Empty workspace
- 2. Set the working directory
- 3. Load packages
- 4. Download the data and extract files from ZIP file
-    (commented out, see note above)
- 5. Read relevant data from text files
- 6. Merge the train and test datasets
- 7. Extract relevant measurements (i.e., the 33 patterns that have a mean and
-    a standard deviation variable; see also "features_info.txt")
- 8. Label the activity numbers
- 9. Select and name the columns
-10. Create the tidy data set
-11. Write the tidy data set to the text file
+1.      Empty workspace
+2.      Set the working directory
+3.      Load packages
+4.      Download the data and extract files from ZIP file
+        (commented out, see note above)
+5.      Read relevant data from text files
+6.      Merge the train and test data sets
+7.      Extract relevant measurements (i.e., the 33 patterns that have a mean and
+        a standard deviation variable; see also "features_info.txt")
+8.      Label the activity numbers
+9.      Select and name the columns
+10.     Create the tidy data set
+11.     Write the tidy data set to the text file
 
 
 ## More information on the original data set
