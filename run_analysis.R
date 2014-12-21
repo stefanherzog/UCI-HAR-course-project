@@ -1,10 +1,13 @@
 #' # Setting things up
 
+
 #' ## Empty workspace
 rm(list=ls())
 
+
 #' ## Set the working directory
 setwd("/Users/herzog/GitHub/UCI-HAR-course-project")
+
 
 #' ## Load packages
 #' Install if not yet installed.
@@ -17,8 +20,6 @@ library(tidyr)
 
 if (!"stringr" %in% installed.packages()) install.packages("stringr")
 library(stringr)
-
-
 
 
 #' # Download the data and extract files from ZIP file
@@ -38,6 +39,7 @@ library(stringr)
 
 
 #' # Read relevant data from text files
+
 
 #' ## Meta-data
 setwd("./UCI HAR Dataset")
@@ -83,7 +85,6 @@ y_test <- read.table("y_test.txt")
 X <- tbl_df(rbind(X_train, X_test))
 y <- c(y_train[,1], y_test[,1])
 subject <- c(subject_train[,1], subject_test[,1])
-
 
 
 #' # Extract relevant measurements

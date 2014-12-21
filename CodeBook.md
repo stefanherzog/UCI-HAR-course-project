@@ -3,6 +3,8 @@
 For more details on the original data set, see the
 [Human Activity Recognition Using Smartphones Data Set][HAR-UCI] website.
 
+[HAR-UCI]: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 ----------------------------------------------------------------
 **Column**      **Explanation**
 --------------- ------------------------------------------------
@@ -20,6 +22,3 @@ For more details on the original data set, see the
                 particular combination of subject, activity 
                 and pattern-variable combination
 ---------------------------------------------------------------
-
-
-[HAR-UCI]: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
