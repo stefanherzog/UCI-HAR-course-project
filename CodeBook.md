@@ -5,9 +5,10 @@ For more details on the original data set, see the
 
 [HAR-UCI]: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-----------------------------------------------------------------
+
+------------------------------------------------------------------
 **Column**      **Explanation**
---------------- ------------------------------------------------
+--------------- --------------------------------------------------
 *subject*       number uniquely identifying each subject
 
 *activity*      name of the activity
@@ -19,6 +20,7 @@ For more details on the original data set, see the
                 see "features_info.txt" for more details
 
 *average*       arithmetic mean of all observation values for a
-                particular combination of subject, activity 
+                particular combination of subject, activity
                 and pattern-variable combination
----------------------------------------------------------------
+                
+-----------------------------------------------------------------

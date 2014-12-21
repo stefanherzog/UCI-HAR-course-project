@@ -28,8 +28,12 @@ I tried to use the [`dplyr`][dplyr] and [`tidyr`][tidyr] packages as much as pos
 when writing the code---including the use of the `%>%` forward-pipe operator
 (as implemented in the [`magrittr`][magrittr] package).
 
+The comments in "run_analysis.r" are formatted as roxygen2 style comments, so 
+that the code can be turned into an [R notebook][R_notebook].
+
 
 [HAR-UCI]: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 [dplyr]: http://cran.r-project.org/web/packages/dplyr/
 [tidyr]: http://cran.r-project.org/web/packages/tidyr/
 [magrittr]: http://cran.r-project.org/web/packages/magrittr/
+[R_notebook]: http://rmarkdown.rstudio.com/r_notebook_format.html
