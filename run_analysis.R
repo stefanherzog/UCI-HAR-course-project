@@ -4,7 +4,7 @@
 rm(list=ls())
 
 #' ## Set the working directory
-setwd("/Users/herzog/Copy/science techniques/Data Science Specialization JHU Coursera/03 Getting and cleaning data/course project")
+setwd("/Users/herzog/GitHub/UCI-HAR-course-project")
 
 #' ## Load packages
 #' Install if not yet installed.
@@ -28,10 +28,13 @@ library(stringr)
 #' "The code should have a file run_analysis.R in the main directory that can 
 #' be run as long as the Samsung data is in your working directory."
 
-urlZIP <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(urlZIP, destfile = "./UCI HAR Dataset.zip", method = "curl")
+#' Since the instructions assume that "the Samsung data is in your 
+#' working directory", I commented out the following three lines, which
+#' download and unzip the data.
 
-unzip(zipfile = "./UCI HAR Dataset.zip")
+# urlZIP <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+# download.file(urlZIP, destfile = "./UCI HAR Dataset.zip", method = "curl")
+# unzip(zipfile = "./UCI HAR Dataset.zip")
 
 
 #' # Read relevant data from text files
@@ -50,9 +53,7 @@ features <-
         rename(., column = V1, feature_name = V2) %>%
         tbl_df
 
-str_replace(features$feature_name, "[(]", "")
 
-str_replace(features$feature_name, c("(", ")"), "")
 #' ## Training data
 
 setwd("./train")
