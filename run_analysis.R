@@ -113,6 +113,7 @@ vars.std.position <-
 
 
 #' "3) Uses descriptive activity names to name the activities in the data set"
+#' Label the activity numbers
 activity <- factor(x = y, 
        levels = activity_labels$activity, 
        labels = activity_labels$activity_label)
@@ -131,6 +132,7 @@ colnames(X.std) <- vars.std.name
 #' "5) From the data set in step 4, creates a second, independent tidy data 
 #' set with the average of each variable for each activity and each subject."
 
+#' Create the tidy data set
 dat <- cbind(subject = subject, activity, X.mean, X.std) %>%
         tbl_df %>%
         gather(variable, value, -subject, -activity)
@@ -139,7 +141,7 @@ tidy_df <- group_by(dat, subject, activity, variable) %>%
         summarize(., average = mean(value)) %>%
         arrange(., subject, activity, variable)
 
-
 setwd("../../")
 
+#' Write the tidy data set to the text file
 write.table(tidy_df, file = "tidy.txt", row.names = FALSE)
